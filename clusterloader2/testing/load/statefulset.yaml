@@ -24,7 +24,7 @@ spec:
       hostNetwork: {{$HostNetworkMode}}
       containers:
       - name: {{.Name}}
-        image: k8s.gcr.io/pause:3.1
+        image: uhub.service.ucloud.cn/testuk8s/pause:3.1
         ports:
           - containerPort: 80
             name: web

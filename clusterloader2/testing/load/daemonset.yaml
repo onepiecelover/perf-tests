@@ -1,5 +1,5 @@
 {{$HostNetworkMode := DefaultParam .CL2_USE_HOST_NETWORK_PODS false}}
-{{$Image := DefaultParam .Image "k8s.gcr.io/pause:3.1"}}
+{{$Image := DefaultParam .Image "uhub.service.ucloud.cn/testuk8s/pause:3.1"}}
 
 apiVersion: apps/v1
 kind: DaemonSet

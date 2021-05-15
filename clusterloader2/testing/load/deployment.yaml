@@ -26,7 +26,7 @@ spec:
       hostNetwork: {{$HostNetworkMode}}
       containers:
 {{if .EnableDNSTests}}
-      - image: k8s.gcr.io/kube-dns-perf-client-amd64:1.1
+      - image: uhub.service.ucloud.cn/testuk8s/kube-dns-perf-client-amd64:1.1
       # Fetches the dns server from /etc/resolv.conf and
       # runs as 5 clients and 2 threads sending 10 queries per second.
       # dnsperf has a client timeout of 5s. It sends queries for 60s,
@@ -40,7 +40,7 @@ spec:
         name: {{.Name}}-dnsperf
         app: dns-perf-client
 {{else}}
-      - image: k8s.gcr.io/pause:3.1
+      - image: uhub.service.ucloud.cn/testuk8s/pause:3.1
         name: {{.Name}}
 {{end}}
         resources:
