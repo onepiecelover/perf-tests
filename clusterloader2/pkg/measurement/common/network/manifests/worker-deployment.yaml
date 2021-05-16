@@ -17,7 +17,7 @@ spec:
         name: worker
     spec:
       containers:
-      - image: gcr.io/k8s-testimages/netperfbenchmark:0.1
+      - image: uhub.service.ucloud.cn/testuk8s/netperfbenchmark:0.1
         name: worker
         imagePullPolicy: IfNotPresent
         resources:
